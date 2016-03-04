@@ -87,6 +87,8 @@ In the second function, $args represents the array above.
 get_form('singular_code_name');
 'singular_code_name' should be the singular_code_name of your form, specified in the array above. Depending on your preferences, we will save or mail the data.
 
+5) We advise adding an .htaccess file to the "json" folder, which will appear in the same folder as the functions.php, after you've created your first form.
+
 
 
 Release notes
