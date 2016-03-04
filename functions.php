@@ -76,6 +76,15 @@
 		 * Save the form (in a json file)
 		 * @since 1.0
 		*/
+		if(!file_exists('json')) {
+			mkdir('json');
+		}
+		if(!file_exists('json/forms.json')) {
+			$fp = fopen('json/forms.json', 'w');
+			fwrite($fp, ',');
+			fclose($fp);
+		}
+		
 		$save_email = false;
 		$save_db = false;
 
